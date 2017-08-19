@@ -1,5 +1,5 @@
-# ShopNX - Shopping Cart with AngularJS (eCommerce web application)
-A single page Shopping Cart web applications with many necessary features of an ecommerce application.
+# Kambodj - Delivery in Morocco
+Kambodj offers a variety of delivery restaurants and has many different cuisines and tastes to offer for your pleasure. No matter what neighborhood you're in, you can choose from almost any type of food your mind can think up. Feel like Chinese today? How about Delicious Thai, Indian or Sushi? Or is it a loaded sandwich or burger your belly craves today? If all else fails, Pizza and wings always hits the spot! All this and much more can come right up to your door, without even picking up the phone. Search by your address and find restaurants that deliver to you in any cuisine and any neighborhood in Gaithersburg. View restaurants menus and exclusive online coupons and discounts, read Yelp reviews and most importantly, order from any one of them online, with just a click of a button - easy, simple, and completely free! 
 
 ### Please have a look at a more matured/bugfree version of ShopNx release <a href="http://preview.codecanyon.net/item/material-shop-material-designed-shopping-cart-using-angularjs/full_screen_preview/17904231">Material Shop</a> 
 

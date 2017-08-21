@@ -15,7 +15,9 @@
      <div class="panel panel-default sidebar-menu">
 
          <div class="panel-heading">
-             <h3 class="panel-title">Price Range <a class="btn btn-xs btn-danger pull-right" href="" ng-click="resetPriceRange();"><i class="fa fa-times-circle"></i> Reset</a></h3>
+           <h3 class="panel-title">Taman mabin w bin <a class="btn btn-xs btn-danger pull-right" href=""
+                                                        ng-click="resetPriceRange();"><i class="fa fa-times-circle"></i>Nsa
+             taman</a></h3>
          </div>
 
          <div class="panel-body">
@@ -41,7 +43,7 @@
       <div class="panel panel-default sidebar-menu">
 
           <div class="panel-heading">
-              <h3 class="panel-title">Brands
+            <h3 class="panel-title">Lmarka
                 <div class="nav-search" id="nav-search">
                         <span class="input-icon">
                             <input placeholder="Filter Brands ..." class="nav-search-input" ng-model="filterBrand" autocomplete="off" type="text" autofocus style="width:100%">
@@ -72,7 +74,7 @@
       <div class="panel panel-default sidebar-menu">
 
           <div class="panel-heading">
-              <h3 class="panel-title">Features
+            <h3 class="panel-title">Chno fih
                 <div class="nav-search" id="nav-search">
                         <span class="input-icon">
                             <input placeholder="Filter Features ..." class="nav-search-input" ng-model="filterFeature" autocomplete="off" type="text" autofocus style="width:100%">
@@ -128,7 +130,7 @@
 
                             <div class="col-sm-12 col-md-8  products-number-sort">
                                 <div class="products-sort-by">
-                                  <span ng-if="fl.brands.length>0">Brands:</span>
+                                  <span ng-if="fl.brands.length>0">Markat:</span>
                                   <a class="btn btn-xs btn-warning" href="" ng-click="removeBrand(b);" ng-repeat="b in fl.brands" style="margin-left:5px;"><i class="fa fa-times-circle"></i> {{b.name}}</a>
 
                                   <a ng-if="fl.categories.length>0" class="btn btn-xs btn-warning" href="" ng-click="removeCategory();" style="margin-left:5px;"><i class="fa fa-times-circle"></i>{{fl.categories[0].name}}</a>
@@ -149,7 +151,7 @@
                       <div class="box" ng-if="products.items.length==0">
                           <div class="row">
                               <div class="col-sm-12">
-                                <h3>No product found. Try removing some filters.</h3>
+                                <h3>Mal9ina walou. Rak tcherretti bazaf n9ess chwiya.</h3>
                               </div>
                           </div>
                       </div>
@@ -181,14 +183,18 @@
                                     <p class="price"><del ng-if="product.variants[0].price!=product.variants[0].mrp">{{product.variants[0].mrp | currency : '$'}}</del> {{product.variants[0].price | currency : '$'}}</p>
                                     <p class="buttons">
                                       <div class="btn-group">
-                                      <a ui-sref="productDetail({id:product._id, slug:product.slug})" class="btn btn-default">View detail</a>
+                                        <a ui-sref="productDetail({id:product._id, slug:product.slug})"
+                                           class="btn btn-default">chof detail</a>
                                       <a ng-click="cart.addItem(product._id, product.name, product.slug, product.variants[0].mrp, product.variants[0].price, -1)" ng-hide="checkCart(product._id)" class="btn btn-info">-</a>
 
                                       <a ng-hide="checkCart(product._id)" class="btn btn-info">{{getQuantity(product._id);}}</a>
 
                                       <a ng-click="cart.addItem(product._id, product.name, product.slug, product.variants[0].mrp, product.variants[0].price, +1)" ng-hide="checkCart(product._id)" class="btn btn-info">+</a>
                                       </div>
-                                      <a ng-click="cart.addItem(product._id, product.name, product.slug, product.variants[0].mrp, product.variants[0].price, 1, product.variants[0].image,product.category, product.variants[0].size ,true);" ng-show="checkCart(product._id)" class="btn btn-primary"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                  <a
+                                    ng-click="cart.addItem(product._id, product.name, product.slug, product.variants[0].mrp, product.variants[0].price, 1, product.variants[0].image,product.category, product.variants[0].size ,true);"
+                                    ng-show="checkCart(product._id)" class="btn btn-primary"><i
+                                    class="fa fa-shopping-cart"></i>Zid f l9effa</a>
                                     </p>
                                 </div>
                                 <!-- /.text -->

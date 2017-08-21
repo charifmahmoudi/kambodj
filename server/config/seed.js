@@ -23,20 +23,20 @@ Shipping.find(function (err, data) {
     Shipping.create(
       {
         "_id" : "561f73dbe87e75d814a98f5a",
-        "carrier" : "DTDC",
-        "country" : "India",
+        "carrier": "Driss",
+        "country": "Fes",
         "charge" : 100,
         "minWeight" : 20,
         "maxWeight" : 200,
         "minOrderValue" : 200,
         "active" : true,
         "__v" : 0,
-        "name" : "DTDC"
+        "name": "Driss"
       },
       {
           "_id" : "561f7ff6fb2f8dac199a618f",
-          "carrier" : "UPS",
-          "country" : "USA",
+        "carrier": "Adil",
+        "country": "Tanger",
           "charge" : 500,
           "minWeight" : 0,
           "maxWeight" : 100,
@@ -46,8 +46,8 @@ Shipping.find(function (err, data) {
       },
       {
           "_id" : "561f801ffb2f8dac199a6190",
-          "carrier" : "DHL",
-          "country" : "Germany",
+        "carrier": "Charika",
+        "country": "Tanger",
           "charge" : 300,
           "minWeight" : 0,
           "maxWeight" : 200,
@@ -57,8 +57,8 @@ Shipping.find(function (err, data) {
       },
       {
           "_id" : "561f804dfb2f8dac199a6191",
-          "carrier" : "DHL",
-          "country" : "India",
+        "carrier": "abbass",
+        "country": "Mekness",
           "charge" : 50,
           "minWeight" : 100,
           "maxWeight" : 500,
@@ -76,8 +76,8 @@ Coupon.find(function (err, data) {
       {
         "_id" : "561cbd6fc3c4fab4009caa0e",
         "code" : "A100",
-        "amount" : 100,
-        "info" : "$100 discount on all products above $100",
+        "amount": 10,
+        "info": "10DH na9sa ila commenditi ktar man 100DH",
         "active" : true,
         "type" : "Discount",
         "minimumCartValue" : 100,
@@ -90,20 +90,20 @@ Coupon.find(function (err, data) {
 Feature.find(function (err, data) {
   if(data.length < 1){
     Feature.create(
-      {"key" : "Type", "val" : "Blouses", "active" : true},
-      {"key" : "Type", "val" : "Gown", "active" : true},
-      {"key" : "Fit", "val" : "Slim", "active" : true},
-      {"key" : "Fit", "val" : "Tight", "active" : true},
-      {"key" : "Fit", "val" : "Loose", "active" : true},
-      {"key" : "Fit", "val" : "Regular", "active" : true},
-      {"key" : "Fabric", "val" : "Cotton", "active" : true},
-      {"key" : "Fabric", "val" : "Polyester", "active" : true},
-      {"key" : "Neck", "val" : "Round Neck", "active" : true},
-      {"key" : "Neck", "val" : "Collar", "active" : true},
-      {"key" : "Color", "val" : "Red", "active" : true},
-      {"key" : "Color", "val" : "Green", "active" : true},
-      {"key" : "Color", "val" : "Blue", "active" : true},
-      {"key" : "Color", "val" : "White", "active" : true}
+      {"key": "Zitoun", "val": "K7al", "active": true},
+      {"key": "Zitoun", "val": "Khder", "active": true},
+      {"key": "Fromage", "val": "7mer", "active": true},
+      {"key": "Fromage", "val": "LA vache qui rit", "active": true},
+      {"key": "Fromage", "val": "Kiri", "active": true},
+      {"key": "Fromage", "val": "Mozza", "active": true},
+      {"key": "l7am", "val": "Djaj", "active": true},
+      {"key": "l7am", "val": "Bagri", "active": true},
+      {"key": "Khobz", "val": "Dar", "active": true},
+      {"key": "Khobz", "val": "Zeb9a", "active": true},
+      {"key": "7ror", "val": "Blach", "active": true},
+      {"key": "7ror", "val": "Chwiya", "active": true},
+      {"key": "7ror", "val": "Bazaf", "active": true},
+      {"key": "7ror", "val": "L3afiya", "active": true}
     );
   }
 });
@@ -206,49 +206,49 @@ Product.find(function (err, data) {
   if(data.length < 1){
     Product.create({
     "_id" : "5607a6af0dc20f1b0366522a",
-    "name" : "ArrowGrey Slim Fit Formal Trouser",
-    "info" : "Complete your formal attire by wearing these grey coloured formal trousers from Arrow. Made from poly viscose, these trousers can be worn with complete ease and comfort. Featuring a smooth finish and flat front, these trousers with cross pockets at the sides can be clubbed with a modish formal shirt for a perfect look. ",
+      "name": "Salade fruit",
+      "info": "La salade de fruits est un dessert composé d'un mélange de fruits. La salade de fruits peut se déguster en toutes saisons.. ",
     "brand" : {
-        "active" : true,
-        "__v" : 0,
-        "slug" : "alleviater",
-        "info" : "Alleviater",
-        "name" : "Alleviater",
-        "_id" : "5607c5c1dddfb6780c5bddf8"
+      "_id": "5607c58bdddfb6780c5bddf3",
+      "name": "Restora lowla",
+      "info": "Estelle",
+      "slug": "Resto1",
+      "active": true,
+      "__v": 0
     },
-    "nameLower" : "arrowgrey slim fit formal trouser",
+      "nameLower": "Salade de fruits",
     "active" : true,
     "sku" : 5,
     "type" : "Men",
-    "slug" : "arrowgrey-slim-fit-formal-trouser",
+      "slug": "salade-de-fruits",
     "variants" : [
         {
-            "mrp" : 1699.0000000000000000,
-            "price" : 1699.0000000000000000,
+          "mrp": 16.0000000000000000,
+          "price": 16.0000000000000000,
             "size" : "30",
             "weight" : "130g",
-            "image" : "handsome-916499_640.jpg"
+          "image": "vi6z9a5o.bmp"
         },
         {
-            "mrp" : 1699.0000000000000000,
-            "price" : 1699.0000000000000000,
+          "mrp": 19.0000000000000000,
+          "price": 19.0000000000000000,
             "size" : "32",
             "weight" : "130g",
-            "image" : "handsome-916499_640.jpg"
+          "image": "bmg4njig.bmp"
         },
         {
-            "mrp" : 1699.0000000000000000,
-            "price" : 1699.0000000000000000,
+          "mrp": 69.0000000000000000,
+          "price": 69.0000000000000000,
             "size" : "34",
             "weight" : "130g",
-            "image" : "handsome-916499_640.jpg"
+          "image": "wrvtv045.bmp"
         },
         {
-            "mrp" : 1699.0000000000000000,
-            "price" : 1699.0000000000000000,
+          "mrp": 99.0000000000000000,
+          "price": 99.0000000000000000,
             "size" : "36",
             "weight" : "130g",
-            "image" : "handsome-916499_640.jpg"
+          "image": "fo8l60rk.bmp"
         },
         {
             "mrp" : 1699.0000000000000000,
@@ -259,35 +259,35 @@ Product.find(function (err, data) {
         }
     ],
     "keyFeatures" : [],
-    "features" : [
+      "features": [
         {
-            "key" : "Fabric",
-            "val" : "Blended"
+          "key": "7ror",
+          "val": "Blach"
         },
         {
-            "key" : "Fit",
-            "val" : "Slim"
+          "key": "Fromage",
+          "val": "Kiri"
         },
         {
-            "key" : "Color",
-            "val" : "Grey"
+          "key": "l7am",
+          "val": "Bagri"
         },
         {
-            "key" : "Style",
-            "val" : "Solid"
+          "key": "Khobz",
+          "val": "Zeb9a"
         },
         {
-            "key" : "Model Stats",
-            "val" : "This model has height 6'4\",Chest 38\",Waist 31\"and is Wearing Size 32."
+          "key": "Jus",
+          "val": "Orange Maziane."
         }
     ],
     "category" : {
         "active" : true,
-        "slug" : "casual-trousers",
+      "slug": "salade",
         "__v" : 0,
         "parentCategory" : 1,
         "category" : 100,
-        "name" : "Casual Trousers",
+      "name": "Salade",
         "_id" : "560774dad4124c770bfc4b68"
     },
     "__v" : 0
@@ -301,36 +301,36 @@ Category.find(function (err, data) {
   if(data.length < 1){
     Category.create({
     "_id" : "560773abd4124c770bfc4b57",
-    "name" : "Men",
+      "name": "Eskhoun",
     "category" : 2,
     "parentCategory" : 0,
     "active" : true,
     "__v" : 0,
-    "slug" : "men"
+      "slug": "Eskhoun"
   },{
       "_id" : "560773b6d4124c770bfc4b58",
-      "name" : "Women",
+      "name": "Lbared",
       "category" : 1,
       "parentCategory" : 0,
       "active" : true,
       "__v" : 0,
-      "slug" : "women"
+      "slug": "Lbared"
   },{
       "_id" : "560773d2d4124c770bfc4b59",
-      "name" : "Dresses",
+      "name": "Salade",
       "category" : 100,
       "parentCategory" : 1,
       "active" : true,
       "__v" : 0,
-      "slug" : "dresses"
+      "slug": "salade"
   },{
       "_id" : "560774dad4124c770bfc4b68",
-      "name" : "Casual Trousers",
+      "name": "9atniya",
       "category" : 209,
       "parentCategory" : 2,
       "active" : true,
       "__v" : 0,
-      "slug" : "casual-trousers"
+      "slug": "9atniya"
   }, function() {
         console.log('finished populating categories');
     });
@@ -341,24 +341,24 @@ Brand.find(function (err, data) {
   if(data.length < 1){
     Brand.create({
     "_id" : "5607c58bdddfb6780c5bddf3",
-    "name" : "Estelle",
+      "name": "Restora lowla",
     "info" : "Estelle",
-    "slug" : "estelle",
+      "slug": "Resto1",
     "active" : true,
     "__v" : 0
 }, {
     "_id" : "5607c599dddfb6780c5bddf4",
-    "name" : "FREECULTR",
+      "name": "Restora Taniya",
     "info" : "FREECULTR",
-    "slug" : "freecultr",
+      "slug": "Resto2",
     "active" : true,
     "__v" : 0
 },{
     "active" : true,
     "__v" : 0,
-    "slug" : "alleviater",
+      "slug": "Resto3",
     "info" : "Alleviater",
-    "name" : "Alleviater",
+      "name": "Restora Talta",
     "_id" : "5607c5c1dddfb6780c5bddf8"
 }, function() {
         console.log('finished populating brands');
